@@ -1,4 +1,4 @@
-# 📝 Bolt Color Field Extension
+# 🎨 Bolt Color Field Extension
 
 This extension allows you to use fields of `type: color` in your 
 ContentTypes, as defined in `contenttypes.yaml`.
