@@ -17,7 +17,7 @@ composer require bolt/color
 
 ### Definition
 
-IN your `contenttypes.yaml`, you can define the following field:
+In your `contenttypes.yaml`, you can define the following field:
 
 ```yaml
       background:
@@ -25,7 +25,7 @@ IN your `contenttypes.yaml`, you can define the following field:
           label: Background color
 ```
 
-Which will show up a colorpicker field like this (without red highlight):
+Which will show up as a colorpicker field like this (without red highlight):
 
 ![Color field](./screenshots/color-field.png)
 
