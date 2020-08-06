@@ -1,0 +1,33 @@
+{
+    "name": "bolt/color",
+    "description": "🎨 Bolt Color extension",
+    "type": "bolt-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivo Valchev",
+            "email": "me@ivovalchev.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.9",
+        "ozdemirburak/iris": "^2.1"
+    },
+    "require-dev": {
+        "bolt/core": "^4.0.0",
+        "symplify/easy-coding-standard": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bolt\\Color\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "entrypoint": "Bolt\\Color\\Extension",
+        "screenshots": [
+            "screenshots/color-field.png"
+        ]
+    }
+}
