@@ -13,19 +13,19 @@ use OzdemirBurak\Iris\Color\Hex;
 /**
  * @ORM\Entity
  */
-class ColorField extends Field implements Excerptable, FieldInterface
+class ColorField extends Field implements Excerptable, FieldInterface, Field\RawPersistable
 {
     public const TYPE = 'color';
 
     public function getValue(): ?array
     {
-        $value = parent::getValue();
+        $value = parent::getValue()[0];
 
         if (empty($value)) {
-            return $value;
+            return [];
         }
 
-        $color = new Hex($value[0]);
+        $color = new Hex($value);
 
         return [$color];
     }
