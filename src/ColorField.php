@@ -6,6 +6,7 @@ namespace Bolt\Color;
 
 use Bolt\Entity\Field;
 use Bolt\Entity\Field\Excerptable;
+use Bolt\Entity\Field\RawPersistable;
 use Bolt\Entity\FieldInterface;
 use Doctrine\ORM\Mapping as ORM;
 use OzdemirBurak\Iris\Color\Hex;
@@ -19,13 +20,13 @@ class ColorField extends Field implements Excerptable, FieldInterface, RawPersis
 
     public function getValue(): ?array
     {
-        $value = parent::getValue()[0];
+        $value = parent::getValue();
 
         if (empty($value)) {
             return [];
         }
 
-        $color = new Hex($value);
+        $color = new Hex($value[0]);
 
         return [$color];
     }
