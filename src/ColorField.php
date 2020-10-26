@@ -13,7 +13,7 @@ use OzdemirBurak\Iris\Color\Hex;
 /**
  * @ORM\Entity
  */
-class ColorField extends Field implements Excerptable, FieldInterface, Field\RawPersistable
+class ColorField extends Field implements Excerptable, FieldInterface, RawPersistable
 {
     public const TYPE = 'color';
 
